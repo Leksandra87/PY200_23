@@ -1,0 +1,231 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 34
+    placeholder_text: '# TODO загрузить абстрактный метод'
+    initial_state:
+      length: 34
+      offset: 0
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: from abc import abstractmethod
+  - offset: 88
+    length: 40
+    placeholder_text: '# TODO нужно сделать абстрактным методом'
+    initial_state:
+      length: 40
+      offset: 88
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: '@abstractmethod'
+  - offset: 194
+    length: 23
+    placeholder_text: '# TODO тоже абстрактный'
+    initial_state:
+      length: 23
+      offset: 194
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: '@abstractmethod'
+  - offset: 431
+    length: 56
+    placeholder_text: '# TODO что тут нужно добавить для разделения интерфейса?'
+    initial_state:
+      length: 56
+      offset: 431
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: "Book, LibraryBookIn, LibraryBookOut"
+  - offset: 558
+    length: 68
+    placeholder_text: "# TODO что нужно написать, так как Book и PhysicalBook очен\
+      ь похожи?"
+    initial_state:
+      length: 68
+      offset: 558
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: "super().__init__(title, author, ISBN)"
+  - offset: 1141
+    length: 17
+    placeholder_text: '# TODO а что тут?'
+    initial_state:
+      length: 17
+      offset: 1141
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: "Book, LibraryBookOut"
+  - offset: 1240
+    length: 71
+    placeholder_text: '# TODO как произвести расширение конструктора на базе какого-то
+      класса?'
+    initial_state:
+      length: 71
+      offset: 1240
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: "super().__init__(title, author, ISBN)"
+  - offset: 1476
+    length: 26
+    placeholder_text: '# TODO разделяем интерфейс'
+    initial_state:
+      length: 26
+      offset: 1476
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: "Book, LibraryBookOut"
+  - offset: 1584
+    length: 23
+    placeholder_text: '# TODO аналогично Ebook'
+    initial_state:
+      length: 23
+      offset: 1584
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: "super().__init__(title, author, ISBN)"
+  - offset: 1958
+    length: 22
+    placeholder_text: '# TODO добавляем книги'
+    initial_state:
+      length: 22
+      offset: 1958
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: self.books.append(book)
+  - offset: 2070
+    length: 114
+    placeholder_text: "# ранее писали book.ISBN == ISBN, а что теперь нужно добави\
+      ть к прошлой записи, чтобы обработать нужный интерфейс?"
+    initial_state:
+      length: 114
+      offset: 2070
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: "isinstance(book, LibraryBookOut) and book.ISBN ==\
+      \ ISBN"
+  - offset: 2364
+    length: 37
+    placeholder_text: '# дописать проверку для cheek_in_book'
+    initial_state:
+      length: 37
+      offset: 2364
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: "isinstance(book, LibraryBookIn) and book.ISBN == ISBN"
+  text: |
+    # TODO загрузить абстрактный метод
+    from typing import Union
+
+
+    class LibraryBookOut:
+        # TODO нужно сделать абстрактным методом
+        def check_out(self):
+            pass
+
+
+    class LibraryBookIn:
+        # TODO тоже абстрактный
+        def check_in(self):
+            pass
+
+
+    class Book:
+        def __init__(self, title: str, author: str, ISBN: str):
+            self.title = title
+            self.author = author
+            self.ISBN = ISBN
+
+
+    class PhysicalBook(# TODO что тут нужно добавить для разделения интерфейса?):
+        def __init__(self, title: str, author: str, ISBN: str):
+            # TODO что нужно написать, так как Book и PhysicalBook очень похожи?
+            self.is_checked_out = False
+
+        def check_out(self):
+            if self.is_checked_out:
+                print(f"Книга {self.title} уже взята на руки.")
+            else:
+                self.is_checked_out = True
+                print(f"Книга {self.title} была взята на руки.")
+
+        def check_in(self):
+            if not self.is_checked_out:
+                print(f"Книга {self.title} уже в библиотеке.")
+            else:
+                self.is_checked_out = False
+                print(f"Книга {self.title} была возвращена.")
+
+
+    class Ebook(# TODO а что тут?):
+        def __init__(self, title: str, author: str, ISBN: str, link: str):
+            # TODO как произвести расширение конструктора на базе какого-то класса?
+            self.link = link
+
+        def check_out(self):
+            print(f"Электронная книга {self.title} доступна для скачивания по ссылке {self.link}")
+
+
+    class Audiobook(# TODO разделяем интерфейс):
+        def __init__(self, title: str, author: str, ISBN: str, link: str):
+            # TODO аналогично Ebook
+            self.link = link
+
+        def check_out(self):
+            print(f"Аудиокнига {self.title} доступна для прослушивания по ссылке {self.link}")
+
+
+    class Library:
+        def __init__(self):
+            self.books = []
+
+        def add_book(self, book: Union[LibraryBookIn, LibraryBookOut]): # Ранее была зависимость на абстракции LibraryBook, а что теперь?
+            # TODO добавляем книги
+
+        def check_out_book(self, ISBN: str):
+            for book in self.books:
+                if # ранее писали book.ISBN == ISBN, а что теперь нужно добавить к прошлой записи, чтобы обработать нужный интерфейс?:
+                    return book.check_out()
+            print(f"Книга с ISBN {ISBN} не найдена.")
+
+        def check_in_book(self, ISBN: str):
+            for book in self.books:
+                if # дописать проверку для cheek_in_book:
+                    return book.check_in()
+            print(f"Книга с ISBN {ISBN} не найдена или не может быть возвращена.")
+
+
+    if __name__ == "__main__":
+        library = Library()
+        book1 = PhysicalBook("The Great Gatsby", "F. Scott Fitzgerald", "123456789")
+        book2 = Ebook("The Catcher in the Rye", "J.D. Salinger", "987654321", "www.example.com/ebooks/thecatcherintherye")
+        book3 = Audiobook("The Catcher in the Rye", "J.D. Salinger", "876543219",
+                          "www.example.com/audiobooks/thecatcherintherye")
+        library.add_book(book1)
+        library.add_book(book2)
+        library.add_book(book3)
+
+        library.check_out_book("123456789")
+        library.check_out_book("876543219")
+        library.check_in_book("876543219")
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true
