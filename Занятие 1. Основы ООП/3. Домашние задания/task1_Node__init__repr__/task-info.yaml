@@ -3,8 +3,8 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 371
-    length: 68
+  - offset: 424
+    length: 146
     placeholder_text: |-
       # TODO  инициализировать атрибуты экземпляра класса Node
               ...
@@ -12,52 +12,52 @@ files:
       length: 68
       offset: 371
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       # TODO  инициализировать атрибуты экземпляра класса Node
               ...
-  - offset: 445
-    length: 60
+  - offset: 576
+    length: 56
     placeholder_text: '# TODO реализовать метод __repr__ для отображения экземпляра'
     initial_state:
       length: 60
       offset: 445
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '# TODO реализовать метод __repr__ для отображения
       экземпляра'
-  - offset: 552
-    length: 40
+  - offset: 679
+    length: 39
     placeholder_text: "...  # TODO инициализировать первый узел"
     initial_state:
       length: 40
       offset: 552
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO инициализировать первый узел"
-  - offset: 612
-    length: 40
+  - offset: 738
+    length: 39
     placeholder_text: "...  # TODO инициализировать второй узел"
     initial_state:
       length: 40
       offset: 612
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO инициализировать второй узел"
-  - offset: 675
-    length: 78
+  - offset: 800
+    length: 81
     placeholder_text: "...  # TODO через атрибут экземпляра устанавливаем первому\
       \ узлу следующий узел"
     initial_state:
       length: 78
       offset: 675
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO через атрибут экземпляра устанавливаем\
       \ первому узлу следующий узел"
   text: |
@@ -97,5 +97,8 @@ files:
     Node(1, Node(2, None))
     Node(2, None)
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 25 May 2023 17:50:33 UTC"
 record: -1

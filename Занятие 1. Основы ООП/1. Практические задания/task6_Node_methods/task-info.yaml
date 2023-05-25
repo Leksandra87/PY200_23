@@ -3,57 +3,57 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 371
-    length: 29
+  - offset: 424
+    length: 25
     placeholder_text: "...  # TODO добавить атрибуты"
     initial_state:
       length: 29
       offset: 371
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO добавить атрибуты"
-  - offset: 506
-    length: 33
+  - offset: 581
+    length: 98
     placeholder_text: "...  # TODO вернуть значение узла"
     initial_state:
       length: 33
       offset: 506
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO вернуть значение узла"
-  - offset: 545
-    length: 30
+  - offset: 685
+    length: 26
     placeholder_text: '# TODO добавить метод get_next'
     initial_state:
       length: 30
       offset: 545
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '# TODO добавить метод get_next'
-  - offset: 691
-    length: 57
+  - offset: 1025
+    length: 53
     placeholder_text: '# TODO с помощью метода распечатать значение первого узла'
     initial_state:
       length: 57
       offset: 691
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '# TODO с помощью метода распечатать значение первого
       узла'
-  - offset: 753
-    length: 64
+  - offset: 1083
+    length: 59
     placeholder_text: '# TODO  с помощью метода распечатать следующий узел второго
       узла'
     initial_state:
       length: 64
       offset: 753
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '# TODO  с помощью метода распечатать следующий узел
       второго узла'
   text: |
@@ -94,5 +94,8 @@ files:
     1
     None
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 25 May 2023 17:17:39 UTC"
 record: -1

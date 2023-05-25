@@ -4,44 +4,44 @@ files:
   visible: true
   placeholders:
   - offset: 724
-    length: 44
+    length: 53
     placeholder_text: "...  # TODO инициализировать ещё один стакан"
     initial_state:
       length: 44
       offset: 724
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO инициализировать ещё один стакан"
-  - offset: 779
-    length: 51
+  - offset: 788
+    length: 90
     placeholder_text: "...)  # TODO распечатать атрибуты экземпляра glass2"
     initial_state:
       length: 51
       offset: 779
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...)  # TODO распечатать атрибуты экземпляра glass2"
-  - offset: 882
-    length: 37
+  - offset: 964
+    length: 33
     placeholder_text: '#  TODO доливаем воды в первый стакан'
     initial_state:
       length: 37
       offset: 882
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '#  TODO доливаем воды в первый стакан'
-  - offset: 1041
-    length: 28
+  - offset: 1156
+    length: 24
     placeholder_text: '#  TODO сравнить id объектов'
     initial_state:
       length: 28
       offset: 1041
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '#  TODO сравнить id объектов'
   text: |
     from typing import Union
@@ -79,6 +79,6 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 post_submission_on_open: true
