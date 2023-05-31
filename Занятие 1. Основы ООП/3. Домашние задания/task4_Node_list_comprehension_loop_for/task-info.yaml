@@ -22,26 +22,26 @@ files:
   visible: true
   placeholders:
   - offset: 544
-    length: 85
+    length: 106
     placeholder_text: "...  # TODO с помощью list comprehension сделать список узл\
       ов со значениями от 0 до 9"
     initial_state:
       length: 85
       offset: 544
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO с помощью list comprehension сделать с\
       писок узлов со значениями от 0 до 9"
-  - offset: 657
-    length: 33
+  - offset: 726
+    length: 29
     placeholder_text: '# TODO распечатать значения узлов'
     initial_state:
       length: 33
       offset: 657
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '# TODO распечатать значения узлов'
   text: |
     from typing import Any, Optional
@@ -69,5 +69,8 @@ files:
 
         # TODO распечатать значения узлов
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 29 May 2023 10:44:01 UTC"
 record: -1

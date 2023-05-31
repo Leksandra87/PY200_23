@@ -12,12 +12,14 @@ class Node:
         """
         self.value = value
         self.next = next_
-        ...  #  добавить атрибуты
+
+        ...  # добавить атрибуты
 
     def get_value(self) -> Any:
         """Метод, который возвращает значение атрибута value"""
         return self.value
-        ...  #  вернуть значение узла
+        ...  # вернуть значение узла
+
     def get_next(self) -> Optional["Node"]:
         return self.next
 
@@ -28,9 +30,9 @@ if __name__ == '__main__':
     first_node = Node(1)  # первый узел
     second_node = Node(2)  # второй узел
     third_node = Node(3)
-    print(first_node.get_value(), first_node.get_next())
-    print(second_node.get_value(), second_node.get_next())
-    print(third_node.get_value(), third_node.get_next())
+    print(first_node.get_value())
+    print(first_node.get_next())
+
 
     #  с помощью метода распечатать значение первого узла
     #  с помощью метода распечатать следующий узел второго узла

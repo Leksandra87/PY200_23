@@ -20,12 +20,14 @@ class Node:
         return f"Node({self.value}, {self.next})"
 
     def is_valid(self, node: Any) -> None:
-       #  метод проверки корректности связываемого узла
+        if not isinstance(node, (Node, type(None))):
+            raise TypeError
+
+        #  метод проверки корректности связываемого узла
         ...
 
     def set_next(self, next_: Optional["Node"] = None) -> None:
-        if not isinstance(next_, (Optional["Node"], None)):
-            raise TypeError
+        self.is_valid(next_)
         self.next = next_
         #  метод должен проверять корректность узла и устанавливать значение атрибуту next
         ...
@@ -35,6 +37,7 @@ if __name__ == '__main__':
     first_node = Node(1)
     second_node = Node(2)
     #  инициализируйте два узла с любыми значеними
+    first_node.next = second_node
 
     #  свяжите первый узел со вторым
 

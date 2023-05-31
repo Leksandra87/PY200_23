@@ -3,8 +3,8 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 424
-    length: 25
+  - offset: 371
+    length: 29
     placeholder_text: "...  # TODO добавить атрибуты"
     initial_state:
       length: 29
@@ -13,18 +13,18 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: "...  # TODO добавить атрибуты"
-  - offset: 581
-    length: 98
+  - offset: 506
+    length: 33
     placeholder_text: "...  # TODO вернуть значение узла"
     initial_state:
       length: 33
       offset: 506
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO вернуть значение узла"
-  - offset: 685
-    length: 26
+  - offset: 545
+    length: 30
     placeholder_text: '# TODO добавить метод get_next'
     initial_state:
       length: 30
@@ -33,26 +33,26 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: '# TODO добавить метод get_next'
-  - offset: 1025
-    length: 53
+  - offset: 691
+    length: 57
     placeholder_text: '# TODO с помощью метода распечатать значение первого узла'
     initial_state:
       length: 57
       offset: 691
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: '# TODO с помощью метода распечатать значение первого
       узла'
-  - offset: 1083
-    length: 59
+  - offset: 753
+    length: 64
     placeholder_text: '# TODO  с помощью метода распечатать следующий узел второго
       узла'
     initial_state:
       length: 64
       offset: 753
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: '# TODO  с помощью метода распечатать следующий узел
       второго узла'
@@ -97,5 +97,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 25 May 2023 17:17:39 UTC"
+  time: "Mon, 29 May 2023 10:14:56 UTC"
 record: -1

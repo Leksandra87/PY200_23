@@ -3,27 +3,27 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 628
-    length: 58
+  - offset: 659
+    length: 53
     placeholder_text: "...  # TODO метод должен возвращать значение текущего узла"
     initial_state:
       length: 58
       offset: 628
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO метод должен возвращать значение текущ\
       его узла"
-  - offset: 1325
-    length: 68
+  - offset: 1448
+    length: 64
     placeholder_text: "# TODO реализуйте алгоритм, который свяжет между собой узлы\
       \ в списке"
     initial_state:
       length: 68
       offset: 1325
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "# TODO реализуйте алгоритм, который свяжет между с\
       обой узлы в списке"
   text: |
@@ -86,5 +86,8 @@ files:
     [Node(0, None), Node(1, None), Node(2, None), Node(3, None), Node(4, None)]
     [Node(0, Node(1)), Node(1, Node(2)), Node(2, Node(3)), Node(3, Node(4)), Node(4, None)]
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 29 May 2023 10:53:00 UTC"
 record: -1

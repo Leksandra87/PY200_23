@@ -3,8 +3,8 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 387
-    length: 89
+  - offset: 315
+    length: 94
     placeholder_text: "...  # TODO метод должен возвращать строку, по которой можн\
       о инициализировать экземпляр класса"
     initial_state:
@@ -46,5 +46,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 25 May 2023 16:24:25 UTC"
+  time: "Sat, 27 May 2023 07:51:56 UTC"
 record: -1
