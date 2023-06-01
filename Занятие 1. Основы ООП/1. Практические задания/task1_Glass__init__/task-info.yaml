@@ -20,7 +20,7 @@ files:
       length: 51
       offset: 218
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Solved
     encrypted_possible_answer: "...  # TODO инициализировать два объекта типа Glass"
   - offset: 858

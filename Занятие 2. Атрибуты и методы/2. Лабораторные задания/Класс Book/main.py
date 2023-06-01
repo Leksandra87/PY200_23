@@ -11,9 +11,10 @@ BOOKS_DATABASE = [
     }
 ]
 
-
-# TODO написать класс Book
-
+#  написать класс Book
+class Book:
+    def __init__(self, id: int, name: str, pages: int):
+        ...
 
 if __name__ == '__main__':
     # инициализируем список книг

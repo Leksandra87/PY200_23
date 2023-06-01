@@ -13,14 +13,14 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 188
-    length: 26
+  - offset: 186
+    length: 23
     placeholder_text: '# TODO написать класс Book'
     initial_state:
       length: 26
       offset: 188
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       class Book:

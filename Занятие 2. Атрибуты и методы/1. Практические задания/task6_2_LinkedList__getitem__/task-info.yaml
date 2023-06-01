@@ -46,67 +46,67 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 183
-    length: 48
+  - offset: 224
+    length: 43
     placeholder_text: "...  # TODO добавить указатель на первый элемент"
     initial_state:
       length: 48
       offset: 183
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO добавить указатель на первый элемент"
-  - offset: 532
-    length: 56
+  - offset: 606
+    length: 51
     placeholder_text: "...  # TODO инициализировать указатель на первый элемент"
     initial_state:
       length: 56
       offset: 532
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO инициализировать указатель на первый э\
       лемент"
-  - offset: 1346
-    length: 41
+  - offset: 1508
+    length: 37
     placeholder_text: '# TODO проверка правильности типа индекса'
     initial_state:
       length: 41
       offset: 1346
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '# TODO проверка правильности типа индекса'
-  - offset: 1412
-    length: 41
+  - offset: 1656
+    length: 44
     placeholder_text: "...  # TODO чему равен начальный элемент?"
     initial_state:
       length: 41
       offset: 1412
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO чему равен начальный элемент?"
-  - offset: 1462
-    length: 57
+  - offset: 1709
+    length: 52
     placeholder_text: "...  # TODO с помощью цикла for добраться до нужного узла"
     initial_state:
       length: 57
       offset: 1462
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO с помощью цикла for добраться до нужно\
       го узла"
-  - offset: 1674
-    length: 49
+  - offset: 1991
+    length: 44
     placeholder_text: "...  # TODO метод должен возвращать значение узла"
     initial_state:
       length: 49
       offset: 1674
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO метод должен возвращать значение узла"
   text: |
     from typing import Iterable, Optional, Any
@@ -167,5 +167,8 @@ files:
 
         print(linked_list[1])
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 01 Jun 2023 17:02:01 UTC"
 record: -1

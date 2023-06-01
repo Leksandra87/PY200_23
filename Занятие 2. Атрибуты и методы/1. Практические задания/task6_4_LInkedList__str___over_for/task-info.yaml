@@ -4,14 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 1817
-    length: 59
+    length: 75
     placeholder_text: "str(self.list_nodes)  # TODO заменить на list comprehension"
     initial_state:
       length: 59
       offset: 1817
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "str(self.list_nodes)  # TODO заменить на list comprehension"
   text: |
     from typing import Iterable, Optional, Any
@@ -121,5 +121,8 @@ files:
             self.is_valid(next_)
             self.next = next_
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 01 Jun 2023 17:51:15 UTC"
 record: -1
