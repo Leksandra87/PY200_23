@@ -14,14 +14,14 @@ files:
   visible: true
   placeholders:
   - offset: 186
-    length: 23
+    length: 24
     placeholder_text: '# TODO написать класс Book'
     initial_state:
       length: 26
       offset: 188
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       class Book:
           ...
@@ -53,5 +53,8 @@ files:
 
         print(list_books)  # проверяем метод __repr__
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 04 Jun 2023 09:48:15 UTC"
 record: -1

@@ -3,26 +3,26 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 246
-    length: 43
+  - offset: 342
+    length: 38
     placeholder_text: "...  # TODO инициализировать связный список"
     initial_state:
       length: 43
       offset: 246
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO инициализировать связный список"
-  - offset: 1481
-    length: 75
+  - offset: 1866
+    length: 71
     placeholder_text: "...  # TODO реализовать алгоритм добавления узла в конец по\
       следовательности"
     initial_state:
       length: 75
       offset: 1481
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO реализовать алгоритм добавления узла в\
       \ конец последовательности"
   text: |
@@ -132,5 +132,8 @@ files:
             self.is_valid(next_)
             self.next = next_
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 04 Jun 2023 18:21:52 UTC"
 record: -1

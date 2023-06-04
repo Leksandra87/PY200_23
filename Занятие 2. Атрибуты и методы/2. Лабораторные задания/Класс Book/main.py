@@ -11,10 +11,27 @@ BOOKS_DATABASE = [
     }
 ]
 
+
 #  написать класс Book
 class Book:
-    def __init__(self, id: int, name: str, pages: int):
+    def __init__(self, id_: int, name: str, pages: int):
+        if not isinstance(id_, int):
+            raise TypeError
+        self.id_ = id_
+        if not isinstance(name, str):
+            raise TypeError
+        self.name = name
+        if not isinstance(pages, int):
+            raise TypeError
+        self.pages = pages
+
+    def __str__(self) -> str:
+        return f'Книга "{self.name}"'
+
+    def __repr__(self) -> str:
+        return f"{self.__class__.__name__}(id_={self.id_}, name='{self.name}', pages={self.pages})"
         ...
+
 
 if __name__ == '__main__':
     # инициализируем список книг
