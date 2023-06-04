@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 99
-    length: 354
+    length: 330
     placeholder_text: |-
       # TODO сделать методом класса
           def area(self, *args):
@@ -33,27 +33,27 @@ files:
                   self.area_by_height(*args)
               if len(args) == 3:
                   self.area_by_angle(*args)
-  - offset: 473
-    length: 67
+  - offset: 435
+    length: 73
     placeholder_text: "def area_by_angle(self, a, b, angle):  # TODO сделать стати\
       ческим методом"
     initial_state:
       length: 73
       offset: 435
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "def area_by_angle(self, a, b, angle):  # TODO сдел\
       ать статическим методом"
-  - offset: 673
-    length: 61
+  - offset: 627
+    length: 67
     placeholder_text: "def area_by_height(self, a, h):  # TODO сделать статическим\
       \ методом"
     initial_state:
       length: 67
       offset: 627
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "def area_by_height(self, a, h):  # TODO сделать ст\
       атическим методом"

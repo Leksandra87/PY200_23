@@ -3,8 +3,8 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 173
-    length: 159
+  - offset: 144
+    length: 130
     placeholder_text: |-
       self.capacity_volume = capacity_volume  # объем стакана
               self.occupied_volume = occupied_volume  # объем жидкости в стакане
@@ -12,7 +12,7 @@ files:
       length: 130
       offset: 144
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: |-
       self.capacity_volume = capacity_volume  # объем стакана
@@ -42,5 +42,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 01 Jun 2023 15:16:00 UTC"
+  time: "Fri, 02 Jun 2023 17:29:47 UTC"
 record: -1

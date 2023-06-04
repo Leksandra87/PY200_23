@@ -3,58 +3,58 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 1391
-    length: 36
+  - offset: 1402
+    length: 27
     placeholder_text: "...  # TODO подставьте нужную ошибку"
     initial_state:
       length: 36
       offset: 1391
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO подставьте нужную ошибку"
-  - offset: 1692
-    length: 6
+  - offset: 1761
+    length: 0
     placeholder_text: '# TODO'
     initial_state:
       length: 6
       offset: 1692
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '# TODO'
-  - offset: 1739
-    length: 63
+  - offset: 1869
+    length: 58
     placeholder_text: "...  # TODO Метод to_list реализовать через list comprehension."
     initial_state:
       length: 63
       offset: 1739
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO Метод to_list реализовать через list comprehension."
-  - offset: 1843
-    length: 61
+  - offset: 1933
+    length: 153
     placeholder_text: "...  # TODO c помощью метода to_list реализовать данный мет\
       од"
     initial_state:
       length: 61
       offset: 1843
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO c помощью метода to_list реализовать д\
       анный метод"
-  - offset: 1944
-    length: 61
+  - offset: 2161
+    length: 56
     placeholder_text: "...  # TODO c помощью метода to_list реализовать данный мет\
       од"
     initial_state:
       length: 61
       offset: 1944
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO c помощью метода to_list реализовать д\
       анный метод"
   text: |
@@ -179,5 +179,8 @@ files:
             self.is_valid(next_)
             self.next = next_
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 04 Jun 2023 09:00:22 UTC"
 record: -1

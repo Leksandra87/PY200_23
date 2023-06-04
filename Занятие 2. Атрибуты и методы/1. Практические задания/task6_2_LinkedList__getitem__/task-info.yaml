@@ -46,66 +46,66 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 224
-    length: 43
+  - offset: 183
+    length: 48
     placeholder_text: "...  # TODO добавить указатель на первый элемент"
     initial_state:
       length: 48
       offset: 183
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO добавить указатель на первый элемент"
-  - offset: 606
-    length: 51
+  - offset: 532
+    length: 56
     placeholder_text: "...  # TODO инициализировать указатель на первый элемент"
     initial_state:
       length: 56
       offset: 532
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO инициализировать указатель на первый э\
       лемент"
-  - offset: 1508
-    length: 37
+  - offset: 1346
+    length: 41
     placeholder_text: '# TODO проверка правильности типа индекса'
     initial_state:
       length: 41
       offset: 1346
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: '# TODO проверка правильности типа индекса'
-  - offset: 1656
-    length: 44
+  - offset: 1412
+    length: 41
     placeholder_text: "...  # TODO чему равен начальный элемент?"
     initial_state:
       length: 41
       offset: 1412
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO чему равен начальный элемент?"
-  - offset: 1709
-    length: 52
+  - offset: 1462
+    length: 57
     placeholder_text: "...  # TODO с помощью цикла for добраться до нужного узла"
     initial_state:
       length: 57
       offset: 1462
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO с помощью цикла for добраться до нужно\
       го узла"
-  - offset: 1991
-    length: 44
+  - offset: 1674
+    length: 49
     placeholder_text: "...  # TODO метод должен возвращать значение узла"
     initial_state:
       length: 49
       offset: 1674
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO метод должен возвращать значение узла"
   text: |
@@ -170,5 +170,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 01 Jun 2023 17:02:01 UTC"
+  time: "Fri, 02 Jun 2023 17:56:54 UTC"
 record: -1

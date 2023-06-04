@@ -12,14 +12,50 @@ class Date:
 
         self.is_valid_date(self.day, self.month, self.year)
 
-    def is_leap_year(self, year: int):
+    @classmethod
+    def is_leap_year(cls, year: int):
         """Проверяет, является ли год високосным"""
-        ...  # TODO реализовать метод
+        if year % 400 == 0:
+            return True
+        elif year % 4 == 0 and year % 100 != 0:
+            return True
+        else:
+            return False
+        ...  # реализовать метод
 
     def get_max_day(self, month: int, year: int):
         """Возвращает максимальное количество дней в месяце для указанного года"""
-        ...  # TODO используя атрибут класса DAY_OF_MONTH вернуть количество дней в запрашиваемом месяце и году
+        if self.is_leap_year(year):
+            return self.DAY_OF_MONTH[1][month - 1]
+        else:
+            return self.DAY_OF_MONTH[0][month - 1]
+
+            ...  # используя атрибут класса DAY_OF_MONTH вернуть количество дней в запрашиваемом месяце и году
 
     def is_valid_date(self, day: int, month: int, year: int):
         """Проверяет, является ли дата корректной"""
-        ...  # TODO проверить валидность даты
+        if not isinstance(day, int):
+            raise TypeError
+        if not isinstance(month, int):
+            raise TypeError
+        if not isinstance(year, int):
+            raise TypeError
+        if self.is_leap_year(year):
+            if not 0 < day <= self.DAY_OF_MONTH[1][month - 1]:
+                raise ValueError
+        elif not self.is_leap_year(year):
+            if not 0 < day <= self.DAY_OF_MONTH[0][month - 1]:
+                raise ValueError
+        if not 0 < month <= 12:
+            raise ValueError
+        if year <= 0:
+            raise ValueError
+        ...  # проверить валидность даты
+
+    def __str__(self) -> str:
+        return f'{self.day:0>2}/{self.month:0>2}/{self.year:0>4}'
+
+
+if __name__ == "__main__":
+    date = Date(28, 2, 2013)
+    print(date)
