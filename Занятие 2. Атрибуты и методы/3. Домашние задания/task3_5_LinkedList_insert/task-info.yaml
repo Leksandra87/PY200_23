@@ -40,15 +40,15 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 2863
-    length: 49
+  - offset: 3589
+    length: 45
     placeholder_text: "...  # TODO реализовать алгоритм вставки элемента"
     initial_state:
       length: 49
       offset: 2863
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO реализовать алгоритм вставки элемента"
   text: |
     from typing import Iterable, Optional, Any
@@ -180,5 +180,8 @@ files:
     [0, 1, 'wow', 2, 3, 4, 100]
     True
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 06 Jun 2023 10:50:02 UTC"
 record: -1

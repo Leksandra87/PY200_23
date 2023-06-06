@@ -66,6 +66,7 @@ class LinkedList:
         node.value = value
 
     def __delitem__(self, index: int):
+        """ Метод удаляет узел по его индексу """
         if not isinstance(index, int):
             raise TypeError()
 
@@ -87,6 +88,7 @@ class LinkedList:
         self.len -= 1
 
     def to_list(self) -> list:
+        """ Преобразует в обычный список """
         return [linked_list_value for linked_list_value in self]
 
     def __repr__(self) -> str:
@@ -96,7 +98,25 @@ class LinkedList:
         return f"{self.to_list()}"
 
     def insert(self, index: int, value: Any) -> None:
-        ...  # TODO реализовать алгоритм вставки элемента
+        """ Вставляет узел по указанному индексу """
+        append_node = Node(value)
+        if not isinstance(index, int):
+            raise TypeError()
+        if index == 0:
+            append_node.next = self.head
+            self.head = append_node
+            self.len += 1
+        elif 0 < index < self.len:
+            tail = self.step_by_step_on_nodes(index)
+            self.step_by_step_on_nodes(index-1).next = append_node
+            append_node.next = tail
+            self.len += 1
+        elif index >= self.len:
+            self.step_by_step_on_nodes(self.len - 1).next = append_node
+            self.len += 1
+
+
+        ...  #  реализовать алгоритм вставки элемента
 
 
 if __name__ == '__main__':

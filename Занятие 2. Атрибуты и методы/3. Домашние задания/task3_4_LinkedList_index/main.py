@@ -85,6 +85,9 @@ class LinkedList:
             self.step_by_step_on_nodes(index - 1).next = self.step_by_step_on_nodes(index + 1)
             self.len -= 1
 
+    def list_index(self, value: Any) -> int:
+        return self.to_list().index(value)
+
     def to_list(self) -> list:
         return [linked_list_value for linked_list_value in self]
 
@@ -96,5 +99,7 @@ class LinkedList:
 
 
 if __name__ == "__main__":
-    # Write your solution here
-    pass
+    list_ = [1, 2, 3]
+    linked_list = LinkedList(list_)
+    print(linked_list)
+    print(linked_list.list_index(2))
