@@ -82,6 +82,7 @@ if __name__ == '__main__':
     print(linked_list)
 
     print(linked_list[1])
-    linked_list.__setitem__(1, 100)
+    linked_list[1] = 100
+    #linked_list.__setitem__(1, 100)
     #  установить элементу с индексом 1 значение 100
     print(linked_list[1])
