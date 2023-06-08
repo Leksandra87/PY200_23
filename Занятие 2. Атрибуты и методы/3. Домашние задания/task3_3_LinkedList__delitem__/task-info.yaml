@@ -3,24 +3,24 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 2693
-    length: 23
+  - offset: 1992
+    length: 28
     placeholder_text: "...  # TODO проверка индекса"
     initial_state:
       length: 28
       offset: 1992
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO проверка индекса"
-  - offset: 2726
-    length: 24
+  - offset: 2030
+    length: 29
     placeholder_text: "...  # TODO алгоритм удаления"
     initial_state:
       length: 29
       offset: 2030
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO алгоритм удаления"
   text: |
@@ -168,5 +168,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Sun, 04 Jun 2023 18:48:46 UTC"
+  time: "Thu, 08 Jun 2023 15:00:35 UTC"
 record: -1

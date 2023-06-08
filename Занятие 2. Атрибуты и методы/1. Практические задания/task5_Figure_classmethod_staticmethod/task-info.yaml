@@ -20,7 +20,7 @@ files:
       length: 330
       offset: 99
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: |-
       # TODO сделать методом класса
@@ -41,7 +41,7 @@ files:
       length: 73
       offset: 435
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Solved
     encrypted_possible_answer: "def area_by_angle(self, a, b, angle):  # TODO сдел\
       ать статическим методом"

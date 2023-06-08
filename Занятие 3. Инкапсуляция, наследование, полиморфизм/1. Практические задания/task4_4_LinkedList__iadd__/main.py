@@ -79,7 +79,10 @@ class LinkedList:
         return self
 
     def __iadd__(self, other: ["LinkedList", list]):
-        ... # TODO определить метод для оператора +=
+        for _ in other:
+            self.append(_)
+        return self
+        ... #  определить метод для оператора +=
 
 
 if __name__ == "__main__":

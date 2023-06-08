@@ -14,20 +14,20 @@ files:
       offset: 2130
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       def __add__(self, other: "LinkedList") -> "LinkedList":  # TODO метод должен уметь складывать list
               if not isinstance(other, LinkedList):
                   raise TypeError
-  - offset: 2444
-    length: 44
+  - offset: 2515
+    length: 40
     placeholder_text: "... # TODO определить метод для оператора +="
     initial_state:
       length: 44
       offset: 2444
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "... # TODO определить метод для оператора +="
   text: |+
     from typing import Any, Iterable, Optional
@@ -170,5 +170,8 @@ files:
             self.is_valid(next_)
             self._next = next_
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 08 Jun 2023 17:49:15 UTC"
 record: -1

@@ -3,29 +3,29 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 245
-    length: 33
+  - offset: 286
+    length: 29
     placeholder_text: "...  # TODO добавить атрибут tail"
     initial_state:
       length: 33
       offset: 245
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO добавить атрибут tail"
-  - offset: 548
-    length: 64
+  - offset: 585
+    length: 60
     placeholder_text: "self.head = append_node  # TODO добавить использование self.tail"
     initial_state:
       length: 64
       offset: 548
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "self.head = append_node  # TODO добавить использов\
       ание self.tail"
-  - offset: 639
-    length: 181
+  - offset: 706
+    length: 156
     placeholder_text: |-
       last_index = self.len - 1  # TODO Переделать через атрибут tail
                   last_node = self.step_by_step_on_nodes(last_index)
@@ -35,23 +35,23 @@ files:
       length: 181
       offset: 639
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       last_index = self.len - 1  # TODO Переделать через атрибут tail
                   last_node = self.step_by_step_on_nodes(last_index)
 
                   self.linked_nodes(last_node, append_node)
-  - offset: 1584
-    length: 89
+  - offset: 1626
+    length: 82
     placeholder_text: "left_node.set_next(right_node)  # TODO next теперь свойство\
       \ имеет setter, используйте это"
     initial_state:
       length: 89
       offset: 1584
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "left_node.set_next(right_node)  # TODO next теперь\
       \ свойство имеет setter, используйте это"
   text: |
@@ -184,5 +184,8 @@ files:
             self.is_valid(next_)
             self._next = next_
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 08 Jun 2023 17:15:34 UTC"
 record: -1

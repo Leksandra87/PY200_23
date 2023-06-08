@@ -13,14 +13,14 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 186
-    length: 24
+  - offset: 188
+    length: 26
     placeholder_text: '# TODO написать класс Book'
     initial_state:
       length: 26
       offset: 188
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: |-
       class Book:
@@ -56,5 +56,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Sun, 04 Jun 2023 09:48:15 UTC"
+  time: "Thu, 08 Jun 2023 14:57:22 UTC"
 record: -1

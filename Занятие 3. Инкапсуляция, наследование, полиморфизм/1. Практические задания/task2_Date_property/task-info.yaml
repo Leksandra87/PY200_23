@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 424
-    length: 88
+    length: 84
     placeholder_text: |-
       # TODO какой декоратор следует применить?
           def is_leap_year(self, year: int) -> bool:
@@ -12,74 +12,74 @@ files:
       length: 88
       offset: 424
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       # TODO какой декоратор следует применить?
           def is_leap_year(self, year: int) -> bool:
-  - offset: 573
-    length: 54
+  - offset: 569
+    length: 50
     placeholder_text: "...  # TODO записать условие проверки високосного года"
     initial_state:
       length: 54
       offset: 573
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO записать условие проверки високосного\
       \ года"
-  - offset: 777
-    length: 53
+  - offset: 769
+    length: 49
     placeholder_text: "...  # TODO вернуть количество дней указанного месяца"
     initial_state:
       length: 53
       offset: 777
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO вернуть количество дней указанного мес\
       яца"
-  - offset: 963
-    length: 88
+  - offset: 951
+    length: 84
     placeholder_text: "...  # TODO если указанный набор день, месяц и год неверны\
       , то вызвать ошибку ValueError"
     initial_state:
       length: 88
       offset: 963
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO если указанный набор день, месяц и год\
       \ неверны, то вызвать ошибку ValueError"
-  - offset: 1057
-    length: 39
+  - offset: 1041
+    length: 35
     placeholder_text: '# TODO записать getter и setter для дня'
     initial_state:
       length: 39
       offset: 1057
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '# TODO записать getter и setter для дня'
-  - offset: 1102
-    length: 42
+  - offset: 1082
+    length: 38
     placeholder_text: '# TODO записать getter и setter для месяца'
     initial_state:
       length: 42
       offset: 1102
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '# TODO записать getter и setter для месяца'
-  - offset: 1150
-    length: 40
+  - offset: 1126
+    length: 36
     placeholder_text: '# TODO записать getter и setter для года'
     initial_state:
       length: 40
       offset: 1150
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '# TODO записать getter и setter для года'
   text: |
     class Date:
@@ -118,6 +118,6 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 post_submission_on_open: true

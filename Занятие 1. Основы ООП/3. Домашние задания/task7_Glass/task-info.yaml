@@ -3,14 +3,14 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 893
-    length: 24
+  - offset: 27
+    length: 27
     placeholder_text: '# TODO  создать класс Glass'
     initial_state:
       length: 27
       offset: 27
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: '# TODO  создать класс Glass'
   text: |
@@ -35,5 +35,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Mon, 29 May 2023 10:58:11 UTC"
+  time: "Thu, 08 Jun 2023 14:52:43 UTC"
 record: -1

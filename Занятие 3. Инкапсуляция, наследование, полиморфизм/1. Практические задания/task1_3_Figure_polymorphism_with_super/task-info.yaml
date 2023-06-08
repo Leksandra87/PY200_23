@@ -3,16 +3,16 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 388
-    length: 62
+  - offset: 405
+    length: 52
     placeholder_text: "...  # TODO c помощью super вызвать метод area базового кла\
       сса"
     initial_state:
       length: 62
       offset: 388
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO c помощью super вызвать метод area баз\
       ового класса"
   text: |
@@ -53,5 +53,8 @@ files:
     50
     538.195520835486
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 08 Jun 2023 16:09:43 UTC"
 record: -1

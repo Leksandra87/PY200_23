@@ -41,7 +41,7 @@ files:
       length: 77
       offset: 2023
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: '# TODO с помощью цикла for распечатать в столбик все
       значения связного списка'
@@ -165,5 +165,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Fri, 02 Jun 2023 18:05:37 UTC"
+  time: "Thu, 08 Jun 2023 14:56:26 UTC"
 record: -1
