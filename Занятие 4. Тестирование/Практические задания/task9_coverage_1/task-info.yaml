@@ -109,6 +109,6 @@ files:
 - name: img_1.png
   visible: true
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 post_submission_on_open: true

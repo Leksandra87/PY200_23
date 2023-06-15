@@ -11,7 +11,7 @@ files:
       length: 60
       offset: 2428
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: "... # TODO реализовать метод клонирования последов\
       ательности"
