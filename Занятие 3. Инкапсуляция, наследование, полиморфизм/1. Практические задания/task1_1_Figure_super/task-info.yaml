@@ -4,13 +4,13 @@ files:
   visible: true
   placeholders:
   - offset: 202
-    length: 54
+    length: 58
     placeholder_text: '# TODO вызвать конструктор базового класса с помощью super'
     initial_state:
       length: 58
       offset: 202
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: '# TODO вызвать конструктор базового класса с помощью
       super'
@@ -45,5 +45,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 08 Jun 2023 15:38:30 UTC"
+  time: "Fri, 09 Jun 2023 09:29:35 UTC"
 record: -1

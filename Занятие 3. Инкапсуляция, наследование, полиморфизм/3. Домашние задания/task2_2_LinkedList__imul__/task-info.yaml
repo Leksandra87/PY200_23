@@ -3,16 +3,16 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 3214
-    length: 61
+  - offset: 3629
+    length: 56
     placeholder_text: "...  # TODO определить одновременное умножение и присваиван\
       ие"
     initial_state:
-      length: 61
-      offset: 3214
+      length: 56
+      offset: 3424
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO определить одновременное умножение и п\
       рисваивание"
   text: |+
@@ -185,5 +185,8 @@ files:
             self.is_valid(next_)
             self._next = next_
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 09 Jun 2023 15:26:35 UTC"
 record: -1

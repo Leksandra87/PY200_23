@@ -12,7 +12,6 @@ BOOKS_DATABASE = [
 ]
 
 
-#  написать класс Book
 class Book:
     def __init__(self, id_: int, name: str, pages: int):
         if not isinstance(id_, int):
@@ -30,7 +29,6 @@ class Book:
 
     def __repr__(self) -> str:
         return f"{self.__class__.__name__}(id_={self.id_}, name='{self.name}', pages={self.pages})"
-        ...
 
 
 if __name__ == '__main__':

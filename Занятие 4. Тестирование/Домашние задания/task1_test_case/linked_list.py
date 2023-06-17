@@ -77,3 +77,11 @@ class LinkedList:
             self.append(item)
 
         return self
+
+
+if __name__ == '__main__':
+    ll = LinkedList([1, 2, 3])
+    print(repr(ll))
+    print(str(ll))
+
+    ...

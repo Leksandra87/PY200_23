@@ -4,27 +4,27 @@ files:
   visible: true
   placeholders:
   - offset: 2130
-    length: 172
+    length: 164
     placeholder_text: |-
       def __add__(self, other: "LinkedList") -> "LinkedList":  # TODO метод должен уметь складывать list
               if not isinstance(other, LinkedList):
                   raise TypeError
     initial_state:
-      length: 172
+      length: 168
       offset: 2130
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Solved
     encrypted_possible_answer: |-
       def __add__(self, other: "LinkedList") -> "LinkedList":  # TODO метод должен уметь складывать list
               if not isinstance(other, LinkedList):
                   raise TypeError
-  - offset: 2515
+  - offset: 2507
     length: 40
     placeholder_text: "... # TODO определить метод для оператора +="
     initial_state:
-      length: 44
-      offset: 2444
+      length: 40
+      offset: 2511
     initialized_from_dependency: false
     selected: true
     status: Solved

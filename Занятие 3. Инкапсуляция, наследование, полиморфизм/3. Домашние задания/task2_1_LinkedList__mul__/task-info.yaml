@@ -3,16 +3,16 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 2428
-    length: 60
+  - offset: 2840
+    length: 56
     placeholder_text: "... # TODO реализовать метод клонирования последовательност\
       и"
     initial_state:
-      length: 60
-      offset: 2428
+      length: 56
+      offset: 2636
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: "... # TODO реализовать метод клонирования последов\
       ательности"
   text: |
@@ -155,5 +155,8 @@ files:
             self.is_valid(next_)
             self._next = next_
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 09 Jun 2023 15:20:43 UTC"
 record: -1

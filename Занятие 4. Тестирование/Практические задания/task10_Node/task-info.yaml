@@ -100,88 +100,88 @@ files:
   visible: true
   placeholders:
   - offset: 56
-    length: 58
+    length: 48
     placeholder_text: "...):  # TODO наследоваться от unittest.TestCase"
     initial_state:
       length: 48
       offset: 56
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...):  # TODO наследоваться от unittest.TestCase"
-  - offset: 350
-    length: 62
+  - offset: 247
+    length: 66
     placeholder_text: "...  # TODO с помощью метода assertIsNone проверить следующ\
       ий узел"
     initial_state:
       length: 66
       offset: 247
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO с помощью метода assertIsNone проверит\
       ь следующий узел"
-  - offset: 646
-    length: 36
+  - offset: 452
+    length: 40
     placeholder_text: "...  # TODO проверить что узлы связались"
     initial_state:
       length: 40
       offset: 452
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO проверить что узлы связались"
-  - offset: 891
-    length: 52
+  - offset: 623
+    length: 56
     placeholder_text: "...  # TODO проверить метод __repr__ без следующего узла"
     initial_state:
       length: 56
       offset: 623
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO проверить метод __repr__ без следующег\
       о узла"
-  - offset: 949
-    length: 58
+  - offset: 685
+    length: 62
     placeholder_text: "...  # TODO пропустить тест с помощью декоратора unittest.skip"
     initial_state:
       length: 62
       offset: 685
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO пропустить тест с помощью декоратора unittest.skip"
-  - offset: 1442
-    length: 36
+  - offset: 973
+    length: 40
     placeholder_text: '# TODO проверить строковое представление'
     initial_state:
       length: 40
       offset: 973
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: '# TODO проверить строковое представление'
-  - offset: 1617
-    length: 54
+  - offset: 1052
+    length: 57
     placeholder_text: "...  # TODO проверить метод is_valid при корректных узлах"
     initial_state:
       length: 57
       offset: 1052
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO проверить метод is_valid при корректны\
       х узлах"
-  - offset: 1808
-    length: 95
+  - offset: 1119
+    length: 99
     placeholder_text: '# TODO с помощью менеджера контакста и метода assertRaises
       проверить корректность вызываемой ошибки'
     initial_state:
       length: 99
       offset: 1119
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: '# TODO с помощью менеджера контакста и метода assertRaises
       проверить корректность вызываемой ошибки'
@@ -223,5 +223,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 15 Jun 2023 17:57:10 UTC"
+  time: "Sat, 17 Jun 2023 13:40:38 UTC"
 record: -1

@@ -3,24 +3,24 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 1740
-    length: 47
+  - offset: 1839
+    length: 43
     placeholder_text: '# TODO реализовать магический метод __setitem__'
     initial_state:
       length: 47
       offset: 1740
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Solved
     encrypted_possible_answer: '# TODO реализовать магический метод __setitem__'
-  - offset: 2186
-    length: 52
+  - offset: 2343
+    length: 48
     placeholder_text: '# TODO установить элементу с индексом 1 значение 100'
     initial_state:
       length: 52
       offset: 2186
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Solved
     encrypted_possible_answer: '# TODO установить элементу с индексом 1 значение 100'
   text: |
@@ -154,5 +154,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 08 Jun 2023 15:00:31 UTC"
+  time: "Sun, 04 Jun 2023 09:24:23 UTC"
 record: -1

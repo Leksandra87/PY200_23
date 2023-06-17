@@ -96,7 +96,15 @@ class LinkedList:
         return self
 
     def __rmul__(self, other: int) -> "LinkedList":
-        ...  # TODO определить правостороннее умножение
+        if not isinstance(other, int):
+            raise TypeError
+
+        for items in repeat(self.to_list(), other - 1):
+            for item in items:
+                self.append(item)
+
+        return self
+        ...  #  определить правостороннее умножение
 
 
 if __name__ == "__main__":

@@ -3,25 +3,25 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 382
-    length: 54
+  - offset: 238
+    length: 59
     placeholder_text: "...  # TODO определить конструктор и перегрузить метод area"
     initial_state:
       length: 59
       offset: 238
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO определить конструктор и перегрузить м\
       етод area"
-  - offset: 630
-    length: 54
+  - offset: 364
+    length: 59
     placeholder_text: "...  # TODO определить конструктор и перегрузить метод area"
     initial_state:
       length: 59
       offset: 364
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO определить конструктор и перегрузить м\
       етод area"
@@ -72,5 +72,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 08 Jun 2023 15:53:10 UTC"
+  time: "Fri, 09 Jun 2023 09:31:13 UTC"
 record: -1
