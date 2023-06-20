@@ -8,6 +8,7 @@ class MyTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
         """ Устанавливаем данные для тестирования """
+        # print('setUp')
         self.my_list = LinkedList(LL)
 
     def test_init(self):
