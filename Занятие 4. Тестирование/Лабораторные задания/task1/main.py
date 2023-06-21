@@ -23,7 +23,11 @@ class FlatForm:
 
     def init_area(self, area: Union[int, float]) -> None:
         self.is_valid(area)
-        self._area = area
+        if self._area is None:
+            self._area = area
+        else:
+            print('Значение площади у этой фигуры уже установлено. Менять нельзя')
+
 
     @property
     def area(self) -> Union[int, float]:
@@ -157,4 +161,5 @@ class Ball(Circle):
 if __name__ == "__main__":
     c = Ball('green', 1000)
     print(c)
-    c.what_is_it()
+    c.init_area(200)
+    print(c)
