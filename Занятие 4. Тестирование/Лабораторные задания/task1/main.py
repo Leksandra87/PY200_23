@@ -5,8 +5,8 @@ from typing import Union
 class FlatForm:
     """
      Класс некая плоская фигура, имеет два параметра:
-     color: цвет фигуры
-     area: площадь фигуры в сантиметрах
+     color: цвет фигуры, может быть изменен
+     area: площадь фигуры в сантиметрах, устанавливается только при инициализации
      """
 
     def __init__(self, color: str, area: Union[int, float]) -> None:
@@ -62,10 +62,11 @@ class Circle(FlatForm):
     def __init__(self, color: str, area: Union[int, float]) -> None:
         super().__init__(color, area)
         self._radius = None
-        self.init_radius(area)
+        self.init_radius()
 
-    def init_radius(self, area):
-        radius = round((area / pi) ** 0.5, 4)
+    def init_radius(self):
+        """ Метод вычисляет радиус по площади и устанавливает атрибут радиус. """
+        radius = round((self.area / pi) ** 0.5, 4)
         self._radius = radius
 
     def perimeter(self):
@@ -82,13 +83,17 @@ class Circle(FlatForm):
 
 
 class Rectangle(FlatForm):
-    """ Класс прямоугольник, дочерний от плоской фигуры """
+    """
+    Класс прямоугольник, дочерний от плоской фигуры,
+    помимо цвета и площади принимает еще один аргумент
+    - длину одной из сторон (в сантиметрах)
+    """
 
     def __init__(self, color: str, area: Union[int, float], width: Union[int, float]) -> None:
         super().__init__(color, area)
         self.width = width
         self._length = None
-        self.init_length(area, width)
+        self.init_length()
 
     @property
     def width(self) -> Union[int, float]:
@@ -98,12 +103,11 @@ class Rectangle(FlatForm):
     def width(self, width: Union[int, float]) -> None:
         self.is_valid(width)
         self._width = width
-        self.init_length(self.area, width)
+        self.init_length()
 
-    def init_length(self, area: Union[int, float], width: Union[int, float]) -> None:
-        self.is_valid(area)
-        self.is_valid(width)
-        self._length = round(area / width, 4)
+    def init_length(self) -> None:
+        """ Метод вычисляет вторую сторону прямоугольника по первой стороне и площади и устанавливает атрибут"""
+        self._length = round(self.area / self.width, 4)
 
     @property
     def length(self) -> Union[int, float]:
@@ -146,6 +150,7 @@ class Ball(Circle):
 
     def __str__(self) -> str:
         return f"Шар {self._color} цвета объемом {self.get_volume()}см3 и радиусом {self.radius} см"
+
     ...
 
 
@@ -153,7 +158,3 @@ if __name__ == "__main__":
     c = Ball('green', 1000)
     print(c)
     c.what_is_it()
-
-
-    # Write your solution here
-    pass
