@@ -48,9 +48,6 @@ class Ebook(Book, CheckOutable):
     def check_out(self):
         print(f"Электронная книга {self.title} доступна для скачивания по ссылке {self.link}")
 
-    def check_in(self):
-        pass
-
 
 class Audiobook(Book, CheckOutable):
     def __init__(self, title: str, author: str, ISBN: str, link: str):
@@ -59,9 +56,6 @@ class Audiobook(Book, CheckOutable):
 
     def check_out(self):
         print(f"Аудиокнига {self.title} доступна для прослушивания по ссылке {self.link}")
-
-    def check_in(self):
-        pass
 
 
 class Library:
@@ -77,7 +71,7 @@ class Library:
                 return book.check_out()
         print(f"Книга с ISBN {ISBN} не найдена или не может быть взята на руки.")
 
-    def check_in_book(self, ISBN:str):
+    def check_in_book(self, ISBN: str):
         for book in self.books:
             if book.ISBN == ISBN and isinstance(book, CheckInable):
                 return book.check_in()

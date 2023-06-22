@@ -1,15 +1,18 @@
-# TODO загрузить абстрактный метод
+from abc import abstractmethod
+# загрузить абстрактный метод
 from typing import Union
 
 
 class LibraryBookOut:
-    # TODO нужно сделать абстрактным методом
+    #  нужно сделать абстрактным методом
+    @abstractmethod
     def check_out(self):
         pass
 
 
 class LibraryBookIn:
-    # TODO тоже абстрактный
+    #  тоже абстрактный
+    @abstractmethod
     def check_in(self):
         pass
 
@@ -21,9 +24,10 @@ class Book:
         self.ISBN = ISBN
 
 
-class PhysicalBook(# TODO что тут нужно добавить для разделения интерфейса?):
+class PhysicalBook(Book, LibraryBookIn, LibraryBookOut):
     def __init__(self, title: str, author: str, ISBN: str):
-        # TODO что нужно написать, так как Book и PhysicalBook очень похожи?
+        super().__init__(title, author, ISBN)
+        # что нужно написать, так как Book и PhysicalBook очень похожи?
         self.is_checked_out = False
 
     def check_out(self):
@@ -41,9 +45,10 @@ class PhysicalBook(# TODO что тут нужно добавить для ра�
             print(f"Книга {self.title} была возвращена.")
 
 
-class Ebook(# TODO а что тут?):
+class Ebook(Book, LibraryBookOut):
     def __init__(self, title: str, author: str, ISBN: str, link: str):
-        # TODO как произвести расширение конструктора на базе какого-то класса?
+        super().__init__(title, author, ISBN)
+        #  как произвести расширение конструктора на базе какого-то класса?
         self.link = link
 
     def check_out(self):
